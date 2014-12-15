@@ -18,7 +18,8 @@ namespace SMS_WebAPI.Models
         public DateTime JoinDate { get; set; }
         public List<Student> Brothers { get; set; }
         public string PhotoUrl { get; set; }
-        public Address Address { get; set; }
+        public string Address { get; set; }
+        public Area Area { get; set; }
 
     }
 }
