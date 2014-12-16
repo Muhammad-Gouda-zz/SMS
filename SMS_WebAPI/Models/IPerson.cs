@@ -7,6 +7,6 @@ namespace SMS_WebAPI.Models
 {
     public interface IPerson
     {
-        public List<Phone> Phones { get; set; }
+        List<Phone> Phones { get; set; }
     }
 }
