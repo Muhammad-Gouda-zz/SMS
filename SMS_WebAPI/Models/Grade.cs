@@ -13,5 +13,6 @@ namespace SMS_WebAPI.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)] 
         public int Id { get; set; }
         public string Title { get; set; }
+        public Language Language { get; set; }
     }
 }

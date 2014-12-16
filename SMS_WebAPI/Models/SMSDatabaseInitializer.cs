@@ -10,15 +10,7 @@ namespace SMS_WebAPI.Models
     {
         protected override void Seed(SMSContext context)
         {
-            base.Seed(context);
-
-            var students = new List<Student>();
-
-            students.Add(new Student
-            {
-                FirstName = "Zeyad",
-                Address = "Abbaseya"
-            });
+            base.Seed(context);            
         }
 
     }

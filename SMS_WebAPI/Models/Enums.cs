@@ -9,4 +9,9 @@ namespace SMS_WebAPI.Models
     {
         Father, Mother, Other
     }
+
+    public enum Language
+    {
+        Arabic, English
+    }
 }
