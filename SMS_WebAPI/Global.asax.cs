@@ -6,7 +6,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-
+using SMS_WebAPI.Models;
 namespace SMS_WebAPI
 {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
@@ -17,7 +17,7 @@ namespace SMS_WebAPI
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-
+            System.Data.Entity.Database.SetInitializer(new SMSDatabaseInitializer()); 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

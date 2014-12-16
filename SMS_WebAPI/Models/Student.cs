@@ -12,9 +12,12 @@ namespace SMS_WebAPI.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)] 
         public int Id { get; set; }
+
+        [Required]
         public string FirstName { get; set; }
         
         public DateTime BirthDate { get; set; }
+        [NotMapped]
         public Decimal AgeOnOctober { get; set; }
         public Grade Grade { get; set; }
         public List<Parent> Parent { get; set; }

@@ -171,6 +171,8 @@
     <Compile Include="Models\IPerson.cs" />
     <Compile Include="Models\Parent.cs" />
     <Compile Include="Models\Phone.cs" />
+    <Compile Include="Models\SMSContext.cs" />
+    <Compile Include="Models\SMSDatabaseInitializer.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
