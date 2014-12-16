@@ -165,6 +165,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201412160310090_dbcreation.cs" />
+    <Compile Include="Migrations\201412160310090_dbcreation.Designer.cs">
+      <DependentUpon>201412160310090_dbcreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Area.cs" />
     <Compile Include="Models\Enums.cs" />
     <Compile Include="Models\Grade.cs" />
@@ -294,6 +299,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201412160310090_dbcreation.resx">
+      <DependentUpon>201412160310090_dbcreation.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
