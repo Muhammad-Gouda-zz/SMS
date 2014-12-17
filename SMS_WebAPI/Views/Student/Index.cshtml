@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Manage Students";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="body" ng-app="smsApp" >
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@Resources.SMSResource.students</h1>
+            </hgroup>
+
+        </div>
+    </section>
+    <section class="content-wrapper main-content clear-fix" ng-controller="studentController as studentCtrl">
+        
+        @Html.Partial("AllStudents")
+    </section>
+</div>
+<input placeholder="mobile" list="names" name="name">
+<datalist id="names">
+    <option id="1" value="01234567">Ali Khalid</option>
+    <option value="98776421">Ahmed</option>
+</datalist>
+
+@Scripts.Render("~/Scripts/angular.js")
+@Scripts.Render("~/Scripts/Angular/studentController.js")

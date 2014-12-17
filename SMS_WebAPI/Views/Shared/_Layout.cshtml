@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html dir=@Resources.SMSResource.dir>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -28,6 +28,9 @@
     @RenderBody()
 
     @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/App_GlobalResources/JSResource.js")
+    @Scripts.Render("~/App_GlobalResources/JSResource.ar-EG.js")
+        
     @RenderSection("scripts", required: false)
 </body>
 </html>
