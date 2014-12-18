@@ -71,7 +71,13 @@ Globalize.prototype.init.prototype = Globalize.prototype;
 //    which serves as the default calendar in use by that culture.
 // 3. Each culture should have a ".calendar" object which is the current calendar being used,
 //    it may be dynamically changed at any time to one of the calendars in ".calendars".
-Globalize.cultures[ "default" ] = {
+Globalize.cultures["default"] = {
+    // For localized strings
+    messages: {
+        //SMS custom messages
+        success: "Success",
+        error: "Error"
+    },
 	// A unique name for the culture in the form <language code>-<country/region code>
 	name: "en",
 	// the name of the culture in the english language
@@ -255,9 +261,8 @@ Globalize.cultures[ "default" ] = {
 						set to the corresponding date in the gregorian calendar.
 			*/
 		}
-	},
-	// For localized strings
-	messages: {}
+	}
+	
 };
 
 Globalize.cultures[ "default" ].calendar = Globalize.cultures[ "default" ].calendars.standard;

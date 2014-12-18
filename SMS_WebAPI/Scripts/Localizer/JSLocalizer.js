@@ -1,6 +1,6 @@
 ﻿function localize(key, culture)
 {
-    var localizedText = "hello from localizer";
+    var localizedText = "UNLOCALIZED_TEXT";
     if (culture.toLowerCase() === 'en')
         localizedText = resource_En[key];
     if (culture.toLowerCase() === 'ar')
