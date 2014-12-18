@@ -16,11 +16,12 @@
         @Html.Partial("AllStudents")
     </section>
 </div>
-<input placeholder="mobile" list="names" name="name">
-<datalist id="names">
-    <option id="1" value="01234567">Ali Khalid</option>
-    <option value="98776421">Ahmed</option>
-</datalist>
+
 
 @Scripts.Render("~/Scripts/angular.js")
 @Scripts.Render("~/Scripts/Angular/studentController.js")
+@Scripts.Render("~/Scripts/Localizer/JSLocalizer.js")
+@Scripts.Render("~/Scripts/Localizer/JSResource.ar-EG.js")
+@Scripts.Render("~/Scripts/Localizer/JSResource.js")
+
+
