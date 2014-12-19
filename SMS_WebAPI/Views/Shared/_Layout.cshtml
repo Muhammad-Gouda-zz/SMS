@@ -12,14 +12,13 @@
         <div class="content-wrapper">
             <div class="float-left">
                 <p class="site-title">
-                    <a href="~/">SMS</a></p>
+                    <a href="~/">School Dashboard</a></p>
             </div>
             <div class="float-right">
                 <nav>
                     <ul id="menu">
-                        <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
-                        <li>@Html.ActionLink("Students", "Index", "Student", new { area = "" }, null)</li>
-                        <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
+                        <li>@Html.ActionLink(@Resources.SMSResource.home, "Index", "Home", new { area = "" }, null)</li>
+                        <li>@Html.ActionLink(@Resources.SMSResource.students, "Index", "Student", new { area = "" }, null)</li>                        
                     </ul>
                 </nav>
             </div>

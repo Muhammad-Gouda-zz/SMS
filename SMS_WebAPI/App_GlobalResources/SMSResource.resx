@@ -120,6 +120,12 @@
   <data name="dir" xml:space="preserve">
     <value>ltr</value>
   </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ErrorProcessingRequest" xml:space="preserve">
+    <value>An error occurred while processing your request</value>
+  </data>
   <data name="home" xml:space="preserve">
     <value>Home</value>
   </data>
@@ -128,5 +134,11 @@
   </data>
   <data name="students" xml:space="preserve">
     <value>Students</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome to School Dashboard</value>
+  </data>
+  <data name="SelectStudent" xml:space="preserve">
+    <value>Select a student to view details</value>
   </data>
 </root>

@@ -120,6 +120,12 @@
   <data name="dir" xml:space="preserve">
     <value>rtl</value>
   </data>
+  <data name="Error" xml:space="preserve">
+    <value>خطأ</value>
+  </data>
+  <data name="ErrorProcessingRequest" xml:space="preserve">
+    <value>عذرا .. حدث خطأ أثناء تلبية طلبك</value>
+  </data>
   <data name="home" xml:space="preserve">
     <value>الرئيسية</value>
   </data>
@@ -128,5 +134,11 @@
   </data>
   <data name="students" xml:space="preserve">
     <value>الطلاب</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>مرحبا بك في نظام School Dashboard</value>
+  </data>
+  <data name="SelectStudent" xml:space="preserve">
+    <value>اختر طالبا/طالبة لعرض التفاصيل</value>
   </data>
 </root>

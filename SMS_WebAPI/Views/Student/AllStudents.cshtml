@@ -1,6 +1,10 @@
-﻿<div ng-init="studentCtrl.getAllStudents()">
+﻿<div ng-init="studentCtrl.getAllStudents()" >
     {{studentCtrl.helper.message}}
-    <ul ng-repeat="student in studentCtrl.students">
-        <li>{{student.FirstName}}</li>        
-    </ul>    
+    <div>@Resources.SMSResource.SelectStudent</div>
+    <div class="scrollable">
+        <ul ng-repeat="student in studentCtrl.students">
+            <li>{{student.FirstName}}</li>
+        </ul>
+    </div>
 </div>
+@Styles.Render("~/Content/SmsStyles/Controls.css")
