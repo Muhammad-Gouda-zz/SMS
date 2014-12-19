@@ -7,7 +7,8 @@
         Globalize.culture("ar-EG");
        
         //JQuery Globalize Library sample
-       // self.helper.message = Globalize.format(2312312, "c");//Globalize.parseFloat("234.66").toString()
+        // self.helper.message = Globalize.format(2312312, "c");//Globalize.parseFloat("234.66").toString()
+        self.helper.message = Globalize.cultures["ar-EG"].messages.success;
         self.method = function (s) {
             alert(s.FirstName);
         }
