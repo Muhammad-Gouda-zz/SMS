@@ -20,7 +20,35 @@ namespace SMS_WebAPI.Models
         [NotMapped]
         public Decimal AgeOnOctober { get; set; }
         public Grade Grade { get; set; }
-        public List<Parent> Parent { get; set; }
+        public List<Parent> Parents { get; set; }
+
+        
+        [NotMapped]
+        public Parent Father {
+            get 
+            {
+                if (Parents == null)
+                    return null;
+                return Parents.SingleOrDefault(p => p.RelationType == RelationType.Father);
+            }
+            set 
+            {
+                if(Parents == null)
+                {
+                    throw new Exception("You have to set Parents first");
+                }
+                
+                if (Father == null)
+                {
+                    value.RelationType = RelationType.Father;
+                    Parents.Add(value);
+                }
+                else
+                {
+                    throw new Exception("Only one Father is allowed, remove current to replace him");
+                }
+            }
+        }
         public List<Phone> Phones { get; set; }
         public DateTime JoinDate { get; set; }
         public List<Student> Brothers { get; set; }

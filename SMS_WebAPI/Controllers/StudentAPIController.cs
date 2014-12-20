@@ -20,7 +20,11 @@ namespace SMS_WebAPI.Controllers
         // GET api/Student
         public IEnumerable<Student> GetStudents()
         {
-            return db.Students.AsEnumerable();
+            //return db.Students.AsEnumerable();
+            //return db.Students.Include(s => s.Parents).AsEnumerable();
+            var studentsWithParents = from students in db.Students.Include(s => s.Parents)                                    
+                                      select students;
+            return studentsWithParents;
         }
 
         // GET api/Student/5

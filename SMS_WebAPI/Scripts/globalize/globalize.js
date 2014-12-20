@@ -76,7 +76,8 @@ Globalize.cultures["default"] = {
     messages: {
         //SMS custom messages
         success: "Success",
-        error: "Error"
+        error: "Error",
+        loading: "Loading..."
     },
 	// A unique name for the culture in the form <language code>-<country/region code>
 	name: "en",

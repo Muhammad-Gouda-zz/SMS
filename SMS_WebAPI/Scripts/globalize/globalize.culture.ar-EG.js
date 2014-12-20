@@ -30,7 +30,8 @@ Globalize.addCultureInfo("ar-EG", "default", {
     messages: {
         //SMS custom messages
         success: "تم بنجاح",
-        error: "خطأ"
+        error: "خطأ",
+        loading: "جاري التحميل..."
     },
 	name: "ar-EG",
 	englishName: "Arabic (Egypt)",

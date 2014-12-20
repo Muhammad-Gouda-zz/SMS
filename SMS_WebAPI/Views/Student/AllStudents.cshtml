@@ -3,7 +3,7 @@
     <div>@Resources.SMSResource.SelectStudent</div>
     <div class="scrollable">
         <ul ng-repeat="student in studentCtrl.students">
-            <li>{{student.FirstName}}</li>
+            <li>{{student.Id +"-"+student.FirstName +" "+ student.Father.FullName}}</li>
         </ul>
     </div>
 </div>
