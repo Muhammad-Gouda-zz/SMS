@@ -554,6 +554,7 @@
     <Content Include="Scripts\globalize\globalize.culture.ar-EG.js" />
     <Content Include="Scripts\globalize\globalize.js" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="Scripts\helpers\localizationHelper.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -628,7 +629,7 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\angular-mocks.js" />
-    <Content Include="Scripts\Angular\studentController.js" />
+    <Content Include="Scripts\angular\studentController.js" />
     <Content Include="Scripts\jquery-2.1.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.js" />

@@ -66,6 +66,7 @@ Globalize.prototype = {
 };
 Globalize.prototype.init.prototype = Globalize.prototype;
 
+
 // 1. When defining a culture, all fields are required except the ones stated as optional.
 // 2. Each culture should have a ".calendars" object with at least one calendar named "standard"
 //    which serves as the default calendar in use by that culture.
@@ -77,7 +78,8 @@ Globalize.cultures["default"] = {
         //SMS custom messages
         success: "Success",
         error: "Error",
-        loading: "Loading..."
+        loading: "Loading...",
+        typeToSearch: "type a text to search for."
     },
 	// A unique name for the culture in the form <language code>-<country/region code>
 	name: "en",

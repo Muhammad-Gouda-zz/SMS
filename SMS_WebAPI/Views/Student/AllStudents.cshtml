@@ -1,10 +1,15 @@
 ﻿<div ng-init="studentCtrl.getAllStudents()" >
     {{studentCtrl.helper.message}}
     <div>@Resources.SMSResource.SelectStudent</div>
-    <div class="scrollable">
-        <ul ng-repeat="student in studentCtrl.students">
-            <li>{{student.Id +"-"+student.FirstName +" "+ student.Father.FullName}}</li>
-        </ul>
+    <input type="text" id="studentNameSearch" list="studentsDatalist" placeholder="" class="search" />
+    <datalist id="studentsDatalist" >
+        <option ng-repeat="student in studentCtrl.students">{{student.FirstName +" "+ student.Father.FullName}}</option>
+        
+    </datalist>
+    <div class="scrollable" >
+        <div ng-repeat="student in studentCtrl.students">
+            <div>{{student.FirstName +" "+ student.Father.FullName}}</div>
+        </div>
     </div>
 </div>
 @Styles.Render("~/Content/SmsStyles/Controls.css")
