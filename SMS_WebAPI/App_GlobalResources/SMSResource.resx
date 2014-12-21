@@ -138,6 +138,9 @@
   <data name="Welcome" xml:space="preserve">
     <value>Welcome to School Dashboard</value>
   </data>
+  <data name="searchPlaceholder" xml:space="preserve">
+    <value>type here to start search.</value>
+  </data>
   <data name="SelectStudent" xml:space="preserve">
     <value>Select a student to view details</value>
   </data>

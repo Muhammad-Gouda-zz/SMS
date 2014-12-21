@@ -554,7 +554,6 @@
     <Content Include="Scripts\globalize\globalize.culture.ar-EG.js" />
     <Content Include="Scripts\globalize\globalize.js" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
-    <Content Include="Scripts\helpers\localizationHelper.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -676,6 +675,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Scripts\helpers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

@@ -1,7 +1,7 @@
 ﻿<div ng-init="studentCtrl.getAllStudents()" >
-    {{studentCtrl.helper.message}}
+    {{studentCtrl.helper.message}}    
+    <input type="text" id="studentNameSearch" list="studentsDatalist" placeholder="@Resources.SMSResource.searchPlaceholder" class="search" />
     <div>@Resources.SMSResource.SelectStudent</div>
-    <input type="text" id="studentNameSearch" list="studentsDatalist" placeholder="" class="search" />
     <datalist id="studentsDatalist" >
         <option ng-repeat="student in studentCtrl.students">{{student.FirstName +" "+ student.Father.FullName}}</option>
         
