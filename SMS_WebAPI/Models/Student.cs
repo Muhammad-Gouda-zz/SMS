@@ -22,6 +22,7 @@ namespace SMS_WebAPI.Models
         public Grade Grade { get; set; }
         public List<Parent> Parents { get; set; }
 
+        public Gender Gender { get; set; }
         
         [NotMapped]
         public Parent Father {
@@ -51,7 +52,17 @@ namespace SMS_WebAPI.Models
         }
         public List<Phone> Phones { get; set; }
         public DateTime JoinDate { get; set; }
-        public List<Student> Brothers { get; set; }
+        
+        //Brothers are all students of the same parent
+        [NotMapped]
+        public List<Student> Brothers 
+        {
+            get 
+            {
+                //return all children of my father except me
+                return Father.Children.SkipWhile(s=>s.Id == Id).ToList();
+            }             
+        }
         public string PhotoUrl { get; set; }
         public string Address { get; set; }
         public Area Area { get; set; }
