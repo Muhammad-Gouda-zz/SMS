@@ -14,4 +14,9 @@ namespace SMS_WebAPI.Models
     {
         Arabic, English
     }
+
+    public enum Gender
+    {
+        Male, Female
+    }
 }
