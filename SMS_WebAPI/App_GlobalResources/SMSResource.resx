@@ -144,4 +144,7 @@
   <data name="SelectStudent" xml:space="preserve">
     <value>Select a student to view details</value>
   </data>
+  <data name="StudentName" xml:space="preserve">
+    <value>Student Name</value>
+  </data>
 </root>

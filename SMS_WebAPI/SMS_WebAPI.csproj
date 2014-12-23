@@ -676,6 +676,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Student\Index.cshtml" />
     <Content Include="Views\Student\AllStudents.cshtml" />
+    <Content Include="Views\Student\AddStudent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
