@@ -12,8 +12,17 @@
         </div>
     </section>
     <section class="content-wrapper main-content clear-fix" ng-controller="studentController as studentCtrl">
-        
-        @Html.Partial("AllStudents")
+        <table>
+            <tr>
+                <td>
+                    @Html.Partial("AllStudents")
+                </td>
+                <td>
+                    @Html.Partial("AddStudent")
+                </td>
+            </tr>
+        </table>
+       
     </section>
 </div>
 
@@ -30,7 +39,7 @@
     "~/Scripts/globalize/globalize.culture.ar-EG.js", 
     "~/Scripts/helpers/localizationHelper.js")
 
-
+@Styles.Render("~/Content/themes/bootstrap.min.css");
 
 
 

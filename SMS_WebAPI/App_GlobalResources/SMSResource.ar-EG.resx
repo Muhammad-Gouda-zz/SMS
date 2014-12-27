@@ -147,4 +147,31 @@
   <data name="StudentName" xml:space="preserve">
     <value>اسم الطالب</value>
   </data>
+  <data name="address" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="age" xml:space="preserve">
+    <value>السن في أول أكتوبر</value>
+  </data>
+  <data name="area" xml:space="preserve">
+    <value>المنطقة</value>
+  </data>
+  <data name="birthDate" xml:space="preserve">
+    <value>تاريخ الميلاد</value>
+  </data>
+  <data name="fatherName" xml:space="preserve">
+    <value>اسم الأب</value>
+  </data>
+  <data name="gender" xml:space="preserve">
+    <value>النوع</value>
+  </data>
+  <data name="joinDate" xml:space="preserve">
+    <value>تاريخ الالتحاق</value>
+  </data>
+  <data name="phone" xml:space="preserve">
+    <value>تليفون المنزل</value>
+  </data>
+  <data name="photo" xml:space="preserve">
+    <value>صورة شخصية</value>
+  </data>
 </root>

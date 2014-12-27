@@ -147,4 +147,31 @@
   <data name="StudentName" xml:space="preserve">
     <value>Student Name</value>
   </data>
+  <data name="address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="age" xml:space="preserve">
+    <value>Age</value>
+  </data>
+  <data name="area" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="birthDate" xml:space="preserve">
+    <value>Birth Date</value>
+  </data>
+  <data name="fatherName" xml:space="preserve">
+    <value>Father Name</value>
+  </data>
+  <data name="gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="joinDate" xml:space="preserve">
+    <value>Join Date</value>
+  </data>
+  <data name="phone" xml:space="preserve">
+    <value>Home Phone</value>
+  </data>
+  <data name="photo" xml:space="preserve">
+    <value>Photo</value>
+  </data>
 </root>
