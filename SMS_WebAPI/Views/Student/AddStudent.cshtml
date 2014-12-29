@@ -1,32 +1,79 @@
-﻿<div class="form-group">
-    <label class="label-primary" for="studneName">@Resources.SMSResource.StudentName</label>
-    <input type="text" id="studentName" style="width:200px" />    
-    
-    <label class="label-primary" for="fatherName">@Resources.SMSResource.fatherName</label>
-    <input type="text" id="fatherName" />    
-    
-    <label class="label-primary" for="gender">@Resources.SMSResource.gender</label>
-    <input type="text" id="gender" />    
-    
-    <label class="label-primary" for="birthDate">@Resources.SMSResource.birthDate</label>
-    <input type="text" id="birthDate"  />    
-    
-    <label class="label-primary" for="age">@Resources.SMSResource.age</label>
-    <input type="text" id="age" />    
-    
-    <label class="label-primary" for="joinDate">@Resources.SMSResource.joinDate</label>
-    <input type="text" id="joinDate" />    
-    
-    <label class="label-primary" for="area">@Resources.SMSResource.area</label>
-    <input type="text" id="area" />    
-    
-    <label class="label-primary" for="address">@Resources.SMSResource.address</label>
-    <input type="text" id="address" />    
+﻿<form>
+    <fieldset name="gouda" class="myfieldset">
+        <legend>@Resources.SMSResource.students</legend>
+        <table>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <label class="label-primary" for="studneName" style="width:100px">@Resources.SMSResource.StudentName</label>
+                        <input type="text" id="studentName" placeholder="first name only" />
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <label class="label-primary" for="fatherName" style="width:100px">@Resources.SMSResource.fatherName</label>
+                        <input type="text" id="fatherName" placeholder="@Resources.SMSResource.fatherName" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <label class="label-primary" for="gender" style="width:100px">@Resources.SMSResource.gender</label>
+                        <input type="text" id="gender" placeholder="@Resources.SMSResource.gender" />
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <label class="label-primary" for="birthDate" style="width:100px">@Resources.SMSResource.birthDate</label>
+                        <input type="date" id="birthDate" placeholder="@Resources.SMSResource.birthDate" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <label class="label-primary" for="age" style="width:100px">@Resources.SMSResource.age</label>
+                        <input type="text" id="age" placeholder="@Resources.SMSResource.age" />
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <label class="label-primary" for="joinDate" style="width:100px">@Resources.SMSResource.joinDate</label>
+                        <input type="text" id="joinDate" placeholder="@Resources.SMSResource.joinDate" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <label class="label-primary" for="area" style="width:100px">@Resources.SMSResource.area</label>
+                        <input type="text" id="area" placeholder="@Resources.SMSResource.area" />
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <label class="label-primary" for="address" style="width:100px">@Resources.SMSResource.address</label>
+                        <input type="text" id="address" placeholder="@Resources.SMSResource.address" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <label class="label-primary" for="phone" style="width:100px">@Resources.SMSResource.phone</label>
+                        <input type="text" id="phone" placeholder="@Resources.SMSResource.phone" />
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <label class="label-primary" for="photo" style="width:100px">@Resources.SMSResource.photo</label>
+                        <input type="text" id="photo" placeholder="@Resources.SMSResource.photo" />
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
 
-    <label class="label-primary" for="phone">@Resources.SMSResource.phone</label>
-    <input type="text" id="phone" />    
-
-    <label class="label-primary" for="photo">@Resources.SMSResource.photo</label>
-    <input type="text" id="photo" />    
-</div>
-@Styles.Render("~/Content/SmsStyles/Controls.css","~/Content/themes/base/jquery-ui.css" )
+</form>
+@Styles.Render("~/Content/SmsStyles/Controls.css", "~/Content/themes/base/jquery-ui.css")
