@@ -1,4 +1,6 @@
-﻿<form>
+﻿
+
+<form>
     <fieldset name="gouda" class="myfieldset">
         <legend>@Resources.SMSResource.students</legend>
         <table>
@@ -6,13 +8,18 @@
                 <td>
                     <div class="form-group">
                         <label class="label-primary" for="studneName" style="width:100px">@Resources.SMSResource.StudentName</label>
-                        <input type="text" id="studentName" placeholder="first name only" />
+                        <input type="text" id="studentName" placeholder="@Resources.SMSResource.firstNameHint" />
                     </div>
                 </td>
                 <td>
                     <div class="form-group">
                         <label class="label-primary" for="fatherName" style="width:100px">@Resources.SMSResource.fatherName</label>
-                        <input type="text" id="fatherName" placeholder="auto complete using existing fathers" />
+                        @*<input type="text" id="fatherName" placeholder="auto complete using existing fathers" />*@
+                        <select id="e1">
+                            <option value="AL">Alabama</option>
+                            
+                            <option value="WY">Wyoming</option>
+                        </select>
                     </div>
                 </td>
             </tr>
@@ -76,4 +83,7 @@
     </fieldset>
 
 </form>
-@Styles.Render("~/Content/SmsStyles/Controls.css", "~/Content/themes/base/jquery-ui.css")
+@Styles.Render("~/Content/SmsStyles/Controls.css", "~/Content/themes/base/jquery-ui.css","~/Scripts/select2-3.5.2/select2.css")
+@Scripts.Render("~/Scripts/jquery-2.1.1.js")
+@Scripts.Render("~/Scripts/select2-3.5.2/select2.js")
+@Scripts.Render("~/Scripts/helpers/textHelper.js")
